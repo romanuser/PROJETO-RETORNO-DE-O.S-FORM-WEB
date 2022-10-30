@@ -1,0 +1,90 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+i{
+    color:greenyellow
+}
+b{
+    color:rgb(133, 166, 238)
+}
+h1 {
+    position:relative;
+    text-align:center;
+   
+}
+.p1{
+    font-size: 50%;
+}
+h1:after {
+    content:"";
+    background-image: linear-gradient(12deg, rgb(141, 194, 238), rgb(121, 240, 121));
+    width:90%;
+    height:5px;
+    position:absolute;
+    bottom:-10px;
+    left:50%;
+    transform:translateX(-50%) skew(-50deg);
+}
+
+form {
+    display: inline-block;
+    text-align: center;
+        position: absolute;
+        width: 100%;
+}
+
+form>div {
+    margin:1em 0;
+}
+label+form {
+    display: block;
+    margin:0px;
+}
+fieldset>input[type=radio]:not(:first-of-type) {
+    margin-left: 20px;
+
+}
+fieldset{
+    display: inline-block;
+    border-radius: 2px;
+    border: solid 1px rgb(112, 110, 110);
+}
+
+input{
+    border-radius: 2px;
+    border: solid 1px rgb(112, 110, 110);
+    text-align: center;
+
+}
+
+input:focus{
+    background-color: gray;
+    outline: 3px solid gray;
+    
+}
+input:required{
+    background-color:rgb(170, 170, 245);
+}
+input:disabled{
+    background-color: rgb(170, 170, 245);
+}
+input[type=radio]{
+    font-weight: bold;
+}
+input[type=button] {
+background:linear-gradient(to right,#314755 0%,#2610DA 51%,#314755 100%);
+margin:10px;
+padding:5px 50px;
+color:white;
+border-radius: 5px;
+box-shadow:0 0 20px #aaa;
+background-size: 200% auto;
+transition:0.5s;
+}
+
+input[type=button]:hover{
+    cursor:pointer;
+    background-position:right center;
+    transition:0.5s;
+}
